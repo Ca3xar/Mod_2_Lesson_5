@@ -2,7 +2,7 @@ def multiply(x, y):
     return x * y
 def divide(x, y):
     if y == 0:
-        return "x" + "/" + "y"
+        return ("turns equation into fraction")
     return x / y
 def add(x, y):
     return x + y
@@ -29,13 +29,13 @@ def calculator():
                     continue
                     
                 if operation == "1":
-                    print(f"{x} * {y}")
+                    print(multiply(x, y))
                 elif operation == "2":
-                    print(f"{x} / {y}")
+                    print(divide(x, y))
                 elif operation == "3":
-                    print(f"{x} + {y}")
+                    print(add(x, y))
                 elif operation == "4":
-                    print(f"{x} - {y}")
+                    print(subtract(x, y))
         else:
             print("invalid operation")
 if __name__ == "__main__":
